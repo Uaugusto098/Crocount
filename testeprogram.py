@@ -1,16 +1,16 @@
-from tkhtmlview import HTMLLabel
 import tkinter as tk
-import webview
+from time import strftime
 
+def atualizar():
+    hora = strftime('%H:%M:%S')
+    label.config(text=hora)
+    label.after(1000, atualizar)  # atualiza a cada 1 segundo
 
-url = "https://www.youtube.com/watch?v=JsZMlGCcjug"
-webview.create_window("YouTube Player", url)
-webview.start()
 root = tk.Tk()
-html = """
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=JsZMlGCcjug"
-frameborder="0" allowfullscreen></iframe>
-"""
-label = HTMLLabel(root, html=html)
-label.pack(fill="both", expand=True)
+root.title("Relógio")
+
+label = tk.Label(root, font=('Arial', 48), background='black', foreground='lime')
+label.pack(padx=20, pady=20)
+
+atualizar()  # inicia atualização
 root.mainloop()
