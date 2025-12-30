@@ -97,6 +97,13 @@ frame_botoes1 = tk.Frame(screen)
 frame_botoes1.pack(side=RIGHT)
 frame_botoes1.config(bg='PINK',pady=100)
 
+frame_tabela=tk.Frame(screen)
+frame_tabela.pack(side=LEFT)
+frame_tabela.config(bg='PINK',pady=100)
+
+
+
+
 frame_time=tk.Frame(screen)
 frame_time.pack(side=tk.TOP,pady=100)
 
@@ -116,6 +123,13 @@ botao5=tk.Button(frame_botoes1,text='instagram',bg='PINK', font=("Sweet Apricot"
 botao6=tk.Button(frame_botoes1,text='Netflix',bg='PINK', font=("Sweet Apricot",14,'bold'),command=processnetflix)
 botao7=tk.Button(frame_botoes1,text='Miniplayer',bg='PINK', font=("Sweet Apricot",14,'bold'),command=screen2)
 
+
+teste=tk.Label(frame_tabela,text='TESTE',bg='PINK',font=('Sweet Apricot',14,'bold'),)
+
+
+
+
+
 linhas.pack(side=tk.BOTTOM, pady=10)
 botao1.pack(side=tk.LEFT, padx=100)
 botao2.pack(side=tk.LEFT, padx=100)
@@ -124,6 +138,8 @@ botao4.pack()
 botao5.pack()
 botao6.pack()
 botao7.pack()
+teste.pack()
+
 
 #finally
 def spacebar1(event):
