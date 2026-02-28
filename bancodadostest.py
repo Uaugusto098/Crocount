@@ -131,7 +131,7 @@ def buttonv():
 
 #INTERFACE GRAFICA UTILIZANDO TKINTER
 screen=tk.Tk()
-screen.title('Sistema Financeiro para bancos')
+screen.title('Teste Banco de Dados para o Crocount')
 screen.geometry("680x480")
 #Posicionar tabela
 bottonT=False
